@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using SeleniumTest1.InfluxDB.Helpers;
+using ClienSidePerformanceTests.InfluxDB.Helpers;
 
-namespace SeleniumTest1.InfluxDB
+namespace ClienSidePerformanceTests.InfluxDB
 {
     public class MetricsWriter : TestBase
     {

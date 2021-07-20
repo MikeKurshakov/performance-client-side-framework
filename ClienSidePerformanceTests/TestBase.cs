@@ -4,7 +4,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
 
-namespace SeleniumTest1
+namespace ClienSidePerformanceTests
 {
     public class TestBase
     {

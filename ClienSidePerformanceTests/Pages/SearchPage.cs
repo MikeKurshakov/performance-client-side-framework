@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
-namespace SeleniumTest1.Pages
+namespace ClienSidePerformanceTests.Pages
 {
     public class SearchPage
     {

@@ -6,7 +6,7 @@ using System.Net;
 using System.Net.Http;
 using System.Text;
 
-namespace SeleniumTest1.InfluxDB
+namespace ClienSidePerformanceTests.InfluxDB
 {
     /// <summary>
     /// Client for writing data to an InfluxDB instance over HTTP.

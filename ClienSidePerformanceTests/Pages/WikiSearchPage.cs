@@ -3,7 +3,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.PageObjects;
 
-namespace SeleniumTest1.Pages
+namespace ClienSidePerformanceTests.Pages
 {
     public class WikiSearchPage
     {

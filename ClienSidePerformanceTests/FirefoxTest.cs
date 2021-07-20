@@ -1,8 +1,8 @@
 ﻿using NUnit.Framework;
-using SeleniumTest1.InfluxDB;
-using SeleniumTest1.Pages;
+using ClienSidePerformanceTests.InfluxDB;
+using ClienSidePerformanceTests.Pages;
 
-namespace SeleniumTest1
+namespace ClienSidePerformanceTests
 {
     class FirefoxTest : TestBase
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SeleniumTest1.InfluxDB.Helpers
+namespace ClienSidePerformanceTests.InfluxDB.Helpers
 {
     public interface IMetric
     {

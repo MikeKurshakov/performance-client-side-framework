@@ -1,4 +1,4 @@
-﻿namespace SeleniumTest1.InfluxDB
+﻿namespace ClienSidePerformanceTests.InfluxDB
 {
     public class Series
     {

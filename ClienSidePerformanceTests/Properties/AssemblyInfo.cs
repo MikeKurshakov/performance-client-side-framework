@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SeleniumTest1")]
+[assembly: AssemblyTitle("ClienSidePerformanceTests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("EPAM Systems")]
-[assembly: AssemblyProduct("SeleniumTest1")]
+[assembly: AssemblyProduct("ClienSidePerformanceTests")]
 [assembly: AssemblyCopyright("Copyright © EPAM Systems 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
