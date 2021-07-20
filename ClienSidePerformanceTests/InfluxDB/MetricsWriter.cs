@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using OpenQA.Selenium;
 using SeleniumTest1.InfluxDB.Helpers;
 
 namespace SeleniumTest1.InfluxDB

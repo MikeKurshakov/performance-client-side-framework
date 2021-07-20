@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Security.Policy;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;

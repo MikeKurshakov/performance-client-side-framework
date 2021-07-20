@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SeleniumTest1.InfluxDB
+﻿namespace SeleniumTest1.InfluxDB
 {
     public static class InfluxConfig
     {
