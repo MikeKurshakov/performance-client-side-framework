@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using InfluxDB.Collector;
 using ClienSidePerformanceTests.InfluxDB.Helpers;
 
 namespace ClienSidePerformanceTests.InfluxDB
@@ -16,25 +17,25 @@ namespace ClienSidePerformanceTests.InfluxDB
 
             Metric metric = new Metric
             {
-                CreatedOn = DateTime.Now,
                 ScenarioName = scenarioName,
                 ActionName = actionName,
                 Elapsed = PageLoadTime()
             };
+
             Write(metric);
             return metric;
         }
 
         private static void Write(IMetric metric)
         {
-            InfluxDBClient.Instance.Copy().Write(InfluxConfig.Measurement, new Dictionary<string, object>
+            Metrics.Write(InfluxConfig.Measurement, new Dictionary<string, object>
+            {
+                ["elapsed"] = metric.Elapsed.TotalMilliseconds
+            }, new Dictionary<string, string>
             {
                 ["action"] = metric.ActionName,
                 ["scenario"] = metric.ScenarioName,
-            }, new Dictionary<string, object>
-            {
-                ["elapsed"] = metric.Elapsed.TotalMilliseconds
-            }, metric.CreatedOn);
+            });
         }
 
         public static TimeSpan PageLoadTime()
