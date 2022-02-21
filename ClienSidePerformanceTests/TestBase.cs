@@ -3,6 +3,8 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
+using InfluxDB.Collector;
+using ClienSidePerformanceTests.InfluxDB;
 
 namespace ClienSidePerformanceTests
 {
@@ -32,6 +34,14 @@ namespace ClienSidePerformanceTests
             driver.Manage().Window.Maximize();
 
             driver.Url = Url;
+
+            Metrics.Collector = new CollectorConfiguration()
+                .Tag.With("project", InfluxConfig.Database)
+                .Tag.With("testclass", TestContext.CurrentContext.Test.ClassName)
+                .Tag.With("test", TestContext.CurrentContext.Test.Name)
+                .Batch.AtInterval(TimeSpan.FromSeconds(2))
+                .WriteTo.InfluxDB(InfluxConfig.Host, InfluxConfig.Database)
+                .CreateCollector();
         }
 
         [TearDown]
