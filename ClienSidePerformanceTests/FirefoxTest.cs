@@ -12,7 +12,7 @@ namespace ClienSidePerformanceTests
             /*IWebElement searchField = driver.FindElement(By.XPath("//input[@id=\"searchInput\"]"));
             searchField.SendKeys("automation testing");
             IWebElement searchButton = driver.FindElement(By.XPath("//*[@id=\"search-form\"]/fieldset/button"));
-            searchButton.Click()*/
+            searchButton.Click();*/
 
             /*var ResponseTime = Convert.ToInt32(js.ExecuteScript("return window.performance.timing.loadEventEnd-window.performance.timing.navigationStart;"));
             Console.WriteLine("Page {0} loading time is {1} ms", driver.Title, ResponseTime);*/
