@@ -132,7 +132,6 @@
     <Compile Include="InfluxDB\Helpers\Metric.cs" />
     <Compile Include="InfluxDB\InfluxConfig.cs" />
     <Compile Include="InfluxDB\MetricsWriter.cs" />
-    <Compile Include="Pages\SearchPage.cs" />
     <Compile Include="Pages\WikiSearchPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestBase.cs" />

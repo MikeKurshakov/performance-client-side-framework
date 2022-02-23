@@ -22,10 +22,9 @@ namespace ClienSidePerformanceTests.Pages
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             PageFactory.InitElements(driver, this);
         }
-        public SearchPage FillSearchField(string inputSearch)
+        public void FillSearchField(string inputSearch)
         {
             searchField.SendKeys(inputSearch);
-            return new SearchPage(driver);
         }
     }
 }
